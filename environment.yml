@@ -1,0 +1,28 @@
+name: tremors-gpu
+channels:
+  - conda-forge
+  - nvidia
+dependencies:
+  - python>=3.11
+  - ollama
+  - cuda-toolkit
+  - cuda-nvcc
+  - cudnn
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - obspy
+  - cartopy
+  - requests
+  - rich
+  - pip
+  - pip:
+    - langchain
+    - langchain-core
+    - langgraph
+    - langchain-openai
+    - ipykernel
+    - hatchling
+    - pyarrow
+    - -e .

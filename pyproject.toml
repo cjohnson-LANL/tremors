@@ -1,0 +1,56 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tremors"
+version = "0.1.0"
+description = "TREMORS: an agentic LLM framework for automated seismic data retrieval via natural language queries."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "BSD-3-Clause" }
+authors = [
+  { name = "Ryley G. Hill",   email = "rghill@lanl.gov" },
+  { name = "Richard Alfaro-Diaz",   email = "rad@lanl.gov" },
+  { name = "Jonathan MacCarthy", email = "jkmacc@lanl.gov" },
+  { name = "Jonas A. Kintner",  email = "jkintner@lanl.gov" },
+  { name = "Christopher W. Johnson",  email = "cwj@lanl.gov" },
+]
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "matplotlib",
+  "obspy",
+  "requests",
+  "rich",
+  "langchain",
+  "langchain-core",
+  "langgraph",
+  "langchain-openai",
+  "pyarrow",
+  "cartopy",
+]
+
+[project.optional-dependencies]
+ollama = [
+  "ollama",
+]
+anthropic = [
+  "langchain-anthropic",
+]
+gpu = [
+  "cuda-toolkit",
+  "cuda-nvcc",
+]
+dev = [
+  "ipykernel",
+]
+
+[project.scripts]
+tremors = "tremors.cli:main"
+
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tremors"]
