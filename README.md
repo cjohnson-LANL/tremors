@@ -8,7 +8,7 @@ TREMORS (Text Referenced Event Mapping and Output Renderer for Seismographs) is 
 
 Natural language queries are translated into a structured intermediate schema, which drives a reproducible, auditable workflow for waveform (event-based/continuous) and metadata acquisition.
 
-Approved for unlimited relaese LA-UR-26-23557
+Approved for unlimited release LA-UR-26-23557
 
 ---
 
