@@ -205,7 +205,6 @@ tremors query QUERY [options]
 ```bash
 tremors query "Find 2 unique events in Northern California from 2016 \
     with magnitude > 5.0. Get waveforms and plot them. \
-    Use the NCEDC datacenter for everything." \
     --output-dir ./temp \
     --backend ollama \
     --model gpt-oss:20b \
