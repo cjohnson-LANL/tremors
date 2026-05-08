@@ -332,7 +332,6 @@ def catalog_to_kbcore(catalog, datacenter: str = '-', extended: bool = True) -> 
         )
         etype = KBCORE_EVENT_TYPE.get(event.event_type, '-')
 
-        # FIX 1: guard against None creation_info or missing fields
         ev_ci      = event.creation_info or {}
         ev_agency  = getattr(ev_ci, 'agency_id', '-') or '-'
         ev_auth    = getattr(ev_ci, 'author',    '-') or '-'
@@ -363,7 +362,6 @@ def catalog_to_kbcore(catalog, datacenter: str = '-', extended: bool = True) -> 
             m_default   = -999.0
             mid_default = -1
 
-            # FIX 2: guard against None creation_info on origins
             orig_ci     = origin.creation_info or {}
             orig_agency = getattr(orig_ci, 'agency_id', '-') or '-'
             orig_auth   = getattr(orig_ci, 'author',    '-') or '-'
@@ -616,10 +614,6 @@ def catalog_to_kbcore(catalog, datacenter: str = '-', extended: bool = True) -> 
                 'lddate':     lddate,
             })
 
-            # FIX 3: station_magnitudes lives on the event, not the magnitude.
-            # The original code was nested inside `for magnitude in event.magnitudes`
-            # which iterated event.station_magnitudes once per network magnitude —
-            # producing duplicates.  Iterate it once at the event level instead.
 
         for sta_mag in event.station_magnitudes:
             sta_mag_orid  = _extract_id(sta_mag.origin_id)   if sta_mag.origin_id   else -1
@@ -657,9 +651,7 @@ def catalog_to_kbcore(catalog, datacenter: str = '-', extended: bool = True) -> 
             if focal_mech.creation_info is not None:
                 fm_auth = focal_mech.creation_info.author or datacenter
 
-            # FIX 4: guard against focal_mech.moment_tensor being None before
-            # accessing derived_origin_id — the original code accessed it
-            # unconditionally before the `if focal_mech.moment_tensor:` block.
+
             if focal_mech.moment_tensor:
                 if focal_mech.moment_tensor.derived_origin_id:
                     mt_orid = _extract_id(focal_mech.moment_tensor.derived_origin_id)
@@ -788,8 +780,6 @@ def catalog_to_kbcore(catalog, datacenter: str = '-', extended: bool = True) -> 
         tables['assoc']   = tables['assoc'].drop(columns=['datacenter', 'net', 'chan', 'loc'])
         tables['netmag']  = tables['netmag'].drop(columns=['datacenter', 'net'])
         tables['stamag']  = tables['stamag'].drop(columns=['datacenter', 'net', 'stamagid'])
-        # FIX 5: was referencing undefined local variable `isc_cat_tables` —
-        # use `tables` consistently
         tables.pop('momenttensor')
         tables.pop('principalaxes')
         tables.pop('focalmech')
