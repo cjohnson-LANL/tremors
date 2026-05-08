@@ -8,8 +8,6 @@ from cartopy.geodesic import Geodesic
 import numpy as np
 
 
-# Simple BBox-based regional rules
-# Format: "Label": {"min_lat": f, "max_lat": f, "min_lon": f, "max_lon": f, "dcs": [list]}
 REGIONAL_RULES = {
     "NorthAmericaWest": {
         "bbox": (30, 70, -170, -115), 
@@ -48,23 +46,6 @@ REGIONAL_RULES = {
         "dcs": ["ISC", "RASPISHAKE", "EMSC"]
     }
 }
-
-
-
-# def _calculate_bbox_from_radius(lat, lon, radius, unit='km'):
-#     """
-#     Calculates a bounding box from a point and a radius.
-#     """
-#     if unit.lower() == 'deg':
-#         d_lat = radius
-#         d_lon = radius / np.cos(np.radians(lat)) if np.cos(np.radians(lat)) > 0 else radius
-#     else: # Default to km
-#         # Roughly 111.32 km per degree
-#         d_lat = radius / 111.32
-#         # Longitude degree length varies with latitude
-#         d_lon = radius / (111.32 * np.cos(np.radians(lat))) if np.cos(np.radians(lat)) > 0 else d_lat
-
-#     return (lat - d_lat, lat + d_lat, lon - d_lon, lon + d_lon)
 
 
 def _convert_to_meters(distance, unit, ellipse='WGS84'):
@@ -170,7 +151,7 @@ def boundingradius(lat, lon, distance, unit='km', numpoints=361, ellipse='WGS84'
     if ellipse not in ['WGS84', 'clrk66', 'GRS80']:
         raise ValueError("Unsupported ellipsoid. Must be one of: WGS84, clrk66, GRS80")
 
-    # Convert distance to meters using pyproj
+    # Convert distance to meters
     distance_m = _convert_to_meters(distance, unit)
 
     g = Geod(ellps=ellipse)
