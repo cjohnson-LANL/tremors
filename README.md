@@ -162,7 +162,7 @@ llm = ChatOpenAI(
 )
 
 agent = TremorsAgent(llm=llm, output_dir="./output")
-result = agent.invoke({
+result = agent._action.invoke(({
     "query": "Retrieve waveforms for the 10 largest earthquakes along the Cascadia Subduction Zone between 2010 and 2020 and plot them."
 })
 ```
