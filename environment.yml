@@ -1,13 +1,10 @@
-name: tremors-gpu
+name: tremors
 channels:
   - conda-forge
   - nvidia
 dependencies:
   - python>=3.11
   - ollama
-  - cuda-toolkit
-  - cuda-nvcc
-  - cudnn
   - numpy
   - pandas
   - scipy
