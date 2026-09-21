@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2">
+  <eventParameters publicID="smi:local/fe462214-b8d4-420a-8288-b9a0f43baf08">
+    <event publicID="smi:emsc.org/event/EMSC000">
+      <preferredOriginID>smi:emsc.org/event/EMSC000/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:emsc.org/event/EMSC000/magnitude</preferredMagnitudeID>
+      <description>
+        <text>EMSC synthetic event 0</text>
+      </description>
+      <creationInfo>
+        <agencyID>EMSC</agencyID>
+        <author>EMSC</author>
+      </creationInfo>
+      <origin publicID="smi:emsc.org/event/EMSC000/origin">
+        <time>
+          <value>2020-03-24T18:03:30.000000Z</value>
+        </time>
+        <latitude>
+          <value>38.55</value>
+        </latitude>
+        <longitude>
+          <value>142.6</value>
+        </longitude>
+        <depth>
+          <value>12000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:emsc.org/event/EMSC000/magnitude">
+        <mag>
+          <value>6.1</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:emsc.org/event/EMSC000/origin</originID>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:emsc.org/event/EMSC001">
+      <preferredOriginID>smi:emsc.org/event/EMSC001/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:emsc.org/event/EMSC001/magnitude</preferredMagnitudeID>
+      <description>
+        <text>EMSC synthetic event 1</text>
+      </description>
+      <creationInfo>
+        <agencyID>EMSC</agencyID>
+        <author>EMSC</author>
+      </creationInfo>
+      <origin publicID="smi:emsc.org/event/EMSC001/origin">
+        <time>
+          <value>2020-06-25T04:47:10.000000Z</value>
+        </time>
+        <latitude>
+          <value>35.2</value>
+        </latitude>
+        <longitude>
+          <value>140.1</value>
+        </longitude>
+        <depth>
+          <value>60000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:emsc.org/event/EMSC001/magnitude">
+        <mag>
+          <value>6.8</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:emsc.org/event/EMSC001/origin</originID>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:emsc.org/event/EMSC002">
+      <preferredOriginID>smi:emsc.org/event/EMSC002/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:emsc.org/event/EMSC002/magnitude</preferredMagnitudeID>
+      <description>
+        <text>EMSC synthetic event 2</text>
+      </description>
+      <creationInfo>
+        <agencyID>EMSC</agencyID>
+        <author>EMSC</author>
+      </creationInfo>
+      <origin publicID="smi:emsc.org/event/EMSC002/origin">
+        <time>
+          <value>2020-11-02T11:38:20.000000Z</value>
+        </time>
+        <latitude>
+          <value>33.4</value>
+        </latitude>
+        <longitude>
+          <value>132.8</value>
+        </longitude>
+        <depth>
+          <value>110000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:emsc.org/event/EMSC002/magnitude">
+        <mag>
+          <value>7.2</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:emsc.org/event/EMSC002/origin</originID>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:emsc.org/event/EMSC003">
+      <preferredOriginID>smi:emsc.org/event/EMSC003/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:emsc.org/event/EMSC003/magnitude</preferredMagnitudeID>
+      <description>
+        <text>EMSC synthetic event 3</text>
+      </description>
+      <creationInfo>
+        <agencyID>EMSC</agencyID>
+        <author>EMSC</author>
+      </creationInfo>
+      <origin publicID="smi:emsc.org/event/EMSC003/origin">
+        <time>
+          <value>2019-05-04T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:emsc.org/event/EMSC003/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:emsc.org/event/EMSC003/origin</originID>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:emsc.org/event/EMSC004">
+      <preferredOriginID>smi:emsc.org/event/EMSC004/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:emsc.org/event/EMSC004/magnitude</preferredMagnitudeID>
+      <description>
+        <text>EMSC synthetic event 4</text>
+      </description>
+      <creationInfo>
+        <agencyID>EMSC</agencyID>
+        <author>EMSC</author>
+      </creationInfo>
+      <origin publicID="smi:emsc.org/event/EMSC004/origin">
+        <time>
+          <value>2021-01-19T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:emsc.org/event/EMSC004/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:emsc.org/event/EMSC004/origin</originID>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:emsc.org/event/EMSC005">
+      <preferredOriginID>smi:emsc.org/event/EMSC005/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:emsc.org/event/EMSC005/magnitude</preferredMagnitudeID>
+      <description>
+        <text>EMSC synthetic event 5</text>
+      </description>
+      <creationInfo>
+        <agencyID>EMSC</agencyID>
+        <author>EMSC</author>
+      </creationInfo>
+      <origin publicID="smi:emsc.org/event/EMSC005/origin">
+        <time>
+          <value>2020-07-07T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>12.0</value>
+        </latitude>
+        <longitude>
+          <value>92.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:emsc.org/event/EMSC005/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:emsc.org/event/EMSC005/origin</originID>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:emsc.org/event/EMSC006">
+      <preferredOriginID>smi:emsc.org/event/EMSC006/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:emsc.org/event/EMSC006/magnitude</preferredMagnitudeID>
+      <description>
+        <text>EMSC synthetic event 6</text>
+      </description>
+      <creationInfo>
+        <agencyID>EMSC</agencyID>
+        <author>EMSC</author>
+      </creationInfo>
+      <origin publicID="smi:emsc.org/event/EMSC006/origin">
+        <time>
+          <value>2020-07-08T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:emsc.org/event/EMSC006/magnitude">
+        <mag>
+          <value>2.1</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:emsc.org/event/EMSC006/origin</originID>
+        <creationInfo>
+          <agencyID>EMSC</agencyID>
+          <author>EMSC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+  </eventParameters>
+</q:quakeml>

@@ -84,11 +84,15 @@ def boundingbox(lat, lon, distance, unit='km', ellipse='WGS84'):
                  Must be one of 'WGS84' (default), 'clrk66', or 'GRS80'
     
     Returns:
-        Tuple containing (latmin, latmax, lonmin, lonmax) where:
+        Tuple containing (latmin, latmax, lonmin, lonmax) as plain floats, where:
             latmin: Minimum latitude of the bounding box
             latmax: Maximum latitude of the bounding box
             lonmin: Minimum longitude of the bounding box
             lonmax: Maximum longitude of the bounding box
+
+        Plain ``float``, not ``np.float64``: these values end up in the agent's
+        ``search_params``, which is checkpointed via msgpack, and numpy scalars
+        are not serializable there.
     """
     # Input validation
     if not -90 <= lat <= 90:
@@ -120,7 +124,7 @@ def boundingbox(lat, lon, distance, unit='km', ellipse='WGS84'):
     lonmin, lonmax = np.min(corner_points[:, 0]), np.max(corner_points[:, 0])
     latmin, latmax = np.min(corner_points[:, 1]), np.max(corner_points[:, 1])
 
-    return latmin, latmax, lonmin, lonmax
+    return float(latmin), float(latmax), float(lonmin), float(lonmax)
 
 
 def boundingradius(lat, lon, distance, unit='km', numpoints=361, ellipse='WGS84'):

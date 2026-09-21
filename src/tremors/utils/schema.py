@@ -32,6 +32,7 @@ but are useful for provenance tracking and FDSN round-tripping.
 
 from __future__ import annotations
 
+import hashlib
 import re
 from datetime import datetime
 from typing import Dict
@@ -115,8 +116,10 @@ def _extract_id(resource_id_obj) -> int:
     --------
     1. Try the ``key=value`` format — split on ``=``, take the last token.
     2. Try a trailing integer after a ``/`` (URI path style).
-    3. Fall back to a stable positive hash so the ID is always an int and
-       never crashes downstream joins, even for exotic formats.
+    3. Fall back to a positive blake2b digest so the ID is always an int and
+       never crashes downstream joins, even for exotic formats. The digest is
+       seed-independent, so the same resource ID maps to the same integer in
+       every process — unlike the builtin ``hash()``, which is randomized.
 
     Parameters
     ----------
@@ -154,8 +157,17 @@ def _extract_id(resource_id_obj) -> int:
     if rid_str.isdigit():
         return int(rid_str)
 
-    # 4. Stable hash fallback — never crashes, always an int
-    return abs(hash(rid_str)) % 10_000_000
+    # 4. Stable digest fallback — never crashes, always an int.
+    #
+    # Deliberately NOT the builtin hash(): Python randomizes str hashing per
+    # process (PYTHONHASHSEED), so hash() would hand the same resource ID a
+    # different evid/orid on every run. That breaks cross-run joins, and because
+    # the cascade sorts events by (time, datacenter, event id) it would also
+    # reorder the parquet tables — losing the reproducibility the workflow
+    # claims. blake2b is seed-independent, so this fallback is stable across
+    # processes and machines.
+    digest = hashlib.blake2b(rid_str.encode("utf-8"), digest_size=8).digest()
+    return int.from_bytes(digest, "big") % 10_000_000
 
 
 # ---------------------------------------------------------------------------

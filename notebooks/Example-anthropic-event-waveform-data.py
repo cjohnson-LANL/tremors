@@ -1,14 +1,23 @@
 import os
-import sys
-import logging
-from pathlib import Path
-from langchain_openai import ChatOpenAI
+from langchain_anthropic import ChatAnthropic
 from tremors import TremorsAgent, approve_all
-llm = ChatOpenAI(
-    base_url="http://localhost:11434/v1",  # matches the cli.py default
-    api_key="ollama",
-    model="gpt-oss:20b",
-    temperature=0.7,
+
+# Custom Anthropic-compatible endpoint (internal gateway, LiteLLM proxy, ...).
+# Point base_url at the endpoint ROOT (the client appends /v1/messages) and
+# pass your key via api_key. Leave base_url unset to hit the public API.
+# Prefer environment variables so the key never lands in source:
+#   export ANTHROPIC_BASE_URL=https://your-gateway.example.com
+#   export ANTHROPIC_API_KEY=sk-ant-...
+#
+# NOTE: temperature is deliberately NOT set. Some gateway-hosted models reject the
+# parameter outright with a 400 ("temperature is not supported"), so cli.py only
+# forwards it for the anthropic backend when you pass --temperature explicitly.
+# Add temperature=... here only if you know your model accepts it.
+llm = ChatAnthropic(
+    base_url=os.environ.get("ANTHROPIC_BASE_URL", "https://your-gateway.example.com"),
+    api_key=os.environ.get("ANTHROPIC_API_KEY", "sk-ant-REPLACE_ME"),
+    model="claude-opus-4-8",
+    max_tokens=4096,
 )
 
 query = "Find 2 unique events in Northern California from 2016 with magnitude > 5.0. Get waveforms and plot them."

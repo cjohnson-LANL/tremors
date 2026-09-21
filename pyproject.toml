@@ -20,15 +20,30 @@ authors = [
 dependencies = [
   "numpy",
   "pandas",
-  "scipy",
   "matplotlib",
   "obspy",
   "requests",
-  "rich",
-  "langchain",
-  "langchain-core",
-  "langgraph",
+  # boundingbox()/boundingradius() in utils/geographic.py use pyproj's Geod for
+  # WGS84 geodesics, and every point+radius plan expands through them. Declared
+  # explicitly because it was previously satisfied only as a transitive
+  # dependency of cartopy — a plotting library has no business keeping the
+  # planner's geodesics alive.
+  "pyproj",
+  # SearchParams (utils/params.py) is a pydantic model and the planner validates
+  # against it directly, so pydantic is a first-party import here rather than
+  # only an implementation detail of langchain.
+  "pydantic",
+  "langchain>=1.3.18",
+  "langchain-core>=1.6.1",
+  "langgraph>=1.2",
+  # anthropic is the CLI's default backend, so its client ships in the core
+  # dependencies — an install whose default backend ImportErrors is broken.
+  "langchain-anthropic",
   "langchain-openai",
+  # Durable sessions (`tremors query --session-id` / `tremors resume`) need a
+  # checkpointer that outlives the process; the default InMemorySaver cannot.
+  "langgraph-checkpoint-sqlite",
+  "deepagents>=0.7.13",
   "pyarrow",
   "cartopy",
 ]
@@ -37,6 +52,9 @@ dependencies = [
 ollama = [
   "ollama",
 ]
+# Retained so documented `pip install -e ".[anthropic]"` invocations keep working;
+# langchain-anthropic moved into the core dependencies when anthropic became the
+# default backend.
 anthropic = [
   "langchain-anthropic",
 ]

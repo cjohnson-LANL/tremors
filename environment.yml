@@ -2,24 +2,35 @@ name: tremors
 channels:
   - conda-forge
   - nvidia
+# `pip: -e .` at the bottom installs TREMORS with the dependencies declared in
+# pyproject.toml, which is the authoritative list. The entries above it are named
+# anyway so a reader can see the stack, and so the compiled scientific packages
+# come from conda-forge rather than being built by pip.
 dependencies:
   - python>=3.11
   - ollama
   - numpy
   - pandas
-  - scipy
   - matplotlib
   - obspy
   - cartopy
+  # Geodesics for boundingbox()/boundingradius(); from conda-forge so it is
+  # linked against the same PROJ as cartopy.
+  - pyproj
   - requests
-  - rich
   - pip
   - pip:
-    - langchain
-    - langchain-core
-    - langgraph
+    - langchain>=1.3.18
+    - langchain-core>=1.6.1
+    - langgraph>=1.2
+    # anthropic is the CLI's default backend.
+    - langchain-anthropic
     - langchain-openai
+    # Durable sessions: `tremors query --session-id` / `tremors resume`.
+    - langgraph-checkpoint-sqlite
+    - deepagents>=0.7.13
+    - pydantic
+    - pyarrow
     - ipykernel
     - hatchling
-    - pyarrow
     - -e .
