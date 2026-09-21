@@ -85,7 +85,7 @@ from tremors.utils.schema import catalog_to_kbcore, inventory_to_kbcore
 WELL_KNOWN_NODES = {
     "AUSPASS": "http://auspass.edu.au",
     "BGR": "http://eida.bgr.de",
-    "EARTHSCOPE": "http://service.iris.edu",
+    "EARTHSCOPE": "http://service.earthscope.org",
     "EIDA": "http://eida-federator.ethz.ch",
     "ETH": "http://eida.ethz.ch",
     "EMSC": "http://www.seismicportal.eu",
@@ -96,8 +96,8 @@ WELL_KNOWN_NODES = {
     "IESDMC": "http://batsws.earth.sinica.edu.tw",
     "INGV": "http://webservices.ingv.it",
     "IPGP": "http://ws.ipgp.fr",
-    "IRIS": "http://service.iris.edu",
-    "IRISPH5": "http://service.iris.edu",
+    "IRIS": "http://service.earthscope.org",
+    # "IRISPH5": "http://service.iris.edu", #retired service
     "ISC": "http://www.isc.ac.uk",
     "KNMI": "http://rdsa.knmi.nl",
     "KOERI": "http://eida.koeri.boun.edu.tr",
