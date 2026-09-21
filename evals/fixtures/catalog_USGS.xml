@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2">
+  <eventParameters publicID="smi:local/5e872ae1-c65d-4d24-9a65-3aeb4bd83d7b">
+    <event publicID="smi:usgs.org/event/USGS000">
+      <preferredOriginID>smi:usgs.org/event/USGS000/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS000/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 0</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS000/origin">
+        <time>
+          <value>2020-02-11T05:12:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>37.1</value>
+        </latitude>
+        <longitude>
+          <value>141.2</value>
+        </longitude>
+        <depth>
+          <value>35000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS000/magnitude">
+        <mag>
+          <value>5.4</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS000/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:usgs.org/event/USGS001">
+      <preferredOriginID>smi:usgs.org/event/USGS001/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS001/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 1</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS001/origin">
+        <time>
+          <value>2020-03-24T18:03:30.000000Z</value>
+        </time>
+        <latitude>
+          <value>38.55</value>
+        </latitude>
+        <longitude>
+          <value>142.6</value>
+        </longitude>
+        <depth>
+          <value>12000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS001/magnitude">
+        <mag>
+          <value>6.1</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS001/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:usgs.org/event/USGS002">
+      <preferredOriginID>smi:usgs.org/event/USGS002/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS002/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 2</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS002/origin">
+        <time>
+          <value>2020-06-25T04:47:10.000000Z</value>
+        </time>
+        <latitude>
+          <value>35.2</value>
+        </latitude>
+        <longitude>
+          <value>140.1</value>
+        </longitude>
+        <depth>
+          <value>60000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS002/magnitude">
+        <mag>
+          <value>6.8</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS002/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:usgs.org/event/USGS003">
+      <preferredOriginID>smi:usgs.org/event/USGS003/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS003/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 3</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS003/origin">
+        <time>
+          <value>2020-09-12T22:15:05.000000Z</value>
+        </time>
+        <latitude>
+          <value>41.9</value>
+        </latitude>
+        <longitude>
+          <value>143.3</value>
+        </longitude>
+        <depth>
+          <value>45000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS003/magnitude">
+        <mag>
+          <value>5.0</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS003/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:usgs.org/event/USGS004">
+      <preferredOriginID>smi:usgs.org/event/USGS004/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS004/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 4</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS004/origin">
+        <time>
+          <value>2020-11-02T11:38:20.000000Z</value>
+        </time>
+        <latitude>
+          <value>33.4</value>
+        </latitude>
+        <longitude>
+          <value>132.8</value>
+        </longitude>
+        <depth>
+          <value>110000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS004/magnitude">
+        <mag>
+          <value>7.2</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS004/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:usgs.org/event/USGS005">
+      <preferredOriginID>smi:usgs.org/event/USGS005/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS005/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 5</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS005/origin">
+        <time>
+          <value>2019-05-04T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS005/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS005/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:usgs.org/event/USGS006">
+      <preferredOriginID>smi:usgs.org/event/USGS006/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS006/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 6</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS006/origin">
+        <time>
+          <value>2021-01-19T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS006/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS006/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:usgs.org/event/USGS007">
+      <preferredOriginID>smi:usgs.org/event/USGS007/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS007/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 7</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS007/origin">
+        <time>
+          <value>2020-07-07T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>12.0</value>
+        </latitude>
+        <longitude>
+          <value>92.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS007/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS007/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:usgs.org/event/USGS008">
+      <preferredOriginID>smi:usgs.org/event/USGS008/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:usgs.org/event/USGS008/magnitude</preferredMagnitudeID>
+      <description>
+        <text>USGS synthetic event 8</text>
+      </description>
+      <creationInfo>
+        <agencyID>USGS</agencyID>
+        <author>USGS</author>
+      </creationInfo>
+      <origin publicID="smi:usgs.org/event/USGS008/origin">
+        <time>
+          <value>2020-07-08T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:usgs.org/event/USGS008/magnitude">
+        <mag>
+          <value>2.1</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:usgs.org/event/USGS008/origin</originID>
+        <creationInfo>
+          <agencyID>USGS</agencyID>
+          <author>USGS</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+  </eventParameters>
+</q:quakeml>

@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='utf-8'?>
+<q:quakeml xmlns="http://quakeml.org/xmlns/bed/1.2" xmlns:q="http://quakeml.org/xmlns/quakeml/1.2">
+  <eventParameters publicID="smi:local/aa3f405d-1a11-4ff5-9136-1f4225d21fa5">
+    <event publicID="smi:isc.org/event/ISC000">
+      <preferredOriginID>smi:isc.org/event/ISC000/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:isc.org/event/ISC000/magnitude</preferredMagnitudeID>
+      <description>
+        <text>ISC synthetic event 0</text>
+      </description>
+      <creationInfo>
+        <agencyID>ISC</agencyID>
+        <author>ISC</author>
+      </creationInfo>
+      <origin publicID="smi:isc.org/event/ISC000/origin">
+        <time>
+          <value>2020-02-11T05:12:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>37.1</value>
+        </latitude>
+        <longitude>
+          <value>141.2</value>
+        </longitude>
+        <depth>
+          <value>35000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:isc.org/event/ISC000/magnitude">
+        <mag>
+          <value>5.4</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:isc.org/event/ISC000/origin</originID>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:isc.org/event/ISC001">
+      <preferredOriginID>smi:isc.org/event/ISC001/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:isc.org/event/ISC001/magnitude</preferredMagnitudeID>
+      <description>
+        <text>ISC synthetic event 1</text>
+      </description>
+      <creationInfo>
+        <agencyID>ISC</agencyID>
+        <author>ISC</author>
+      </creationInfo>
+      <origin publicID="smi:isc.org/event/ISC001/origin">
+        <time>
+          <value>2020-06-25T04:47:10.000000Z</value>
+        </time>
+        <latitude>
+          <value>35.2</value>
+        </latitude>
+        <longitude>
+          <value>140.1</value>
+        </longitude>
+        <depth>
+          <value>60000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:isc.org/event/ISC001/magnitude">
+        <mag>
+          <value>6.8</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:isc.org/event/ISC001/origin</originID>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:isc.org/event/ISC002">
+      <preferredOriginID>smi:isc.org/event/ISC002/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:isc.org/event/ISC002/magnitude</preferredMagnitudeID>
+      <description>
+        <text>ISC synthetic event 2</text>
+      </description>
+      <creationInfo>
+        <agencyID>ISC</agencyID>
+        <author>ISC</author>
+      </creationInfo>
+      <origin publicID="smi:isc.org/event/ISC002/origin">
+        <time>
+          <value>2020-11-02T11:38:20.000000Z</value>
+        </time>
+        <latitude>
+          <value>33.4</value>
+        </latitude>
+        <longitude>
+          <value>132.8</value>
+        </longitude>
+        <depth>
+          <value>110000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:isc.org/event/ISC002/magnitude">
+        <mag>
+          <value>7.2</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:isc.org/event/ISC002/origin</originID>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:isc.org/event/ISC003">
+      <preferredOriginID>smi:isc.org/event/ISC003/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:isc.org/event/ISC003/magnitude</preferredMagnitudeID>
+      <description>
+        <text>ISC synthetic event 3</text>
+      </description>
+      <creationInfo>
+        <agencyID>ISC</agencyID>
+        <author>ISC</author>
+      </creationInfo>
+      <origin publicID="smi:isc.org/event/ISC003/origin">
+        <time>
+          <value>2019-05-04T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:isc.org/event/ISC003/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:isc.org/event/ISC003/origin</originID>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:isc.org/event/ISC004">
+      <preferredOriginID>smi:isc.org/event/ISC004/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:isc.org/event/ISC004/magnitude</preferredMagnitudeID>
+      <description>
+        <text>ISC synthetic event 4</text>
+      </description>
+      <creationInfo>
+        <agencyID>ISC</agencyID>
+        <author>ISC</author>
+      </creationInfo>
+      <origin publicID="smi:isc.org/event/ISC004/origin">
+        <time>
+          <value>2021-01-19T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:isc.org/event/ISC004/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:isc.org/event/ISC004/origin</originID>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:isc.org/event/ISC005">
+      <preferredOriginID>smi:isc.org/event/ISC005/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:isc.org/event/ISC005/magnitude</preferredMagnitudeID>
+      <description>
+        <text>ISC synthetic event 5</text>
+      </description>
+      <creationInfo>
+        <agencyID>ISC</agencyID>
+        <author>ISC</author>
+      </creationInfo>
+      <origin publicID="smi:isc.org/event/ISC005/origin">
+        <time>
+          <value>2020-07-07T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>12.0</value>
+        </latitude>
+        <longitude>
+          <value>92.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:isc.org/event/ISC005/magnitude">
+        <mag>
+          <value>6.5</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:isc.org/event/ISC005/origin</originID>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+    <event publicID="smi:isc.org/event/ISC006">
+      <preferredOriginID>smi:isc.org/event/ISC006/origin</preferredOriginID>
+      <preferredMagnitudeID>smi:isc.org/event/ISC006/magnitude</preferredMagnitudeID>
+      <description>
+        <text>ISC synthetic event 6</text>
+      </description>
+      <creationInfo>
+        <agencyID>ISC</agencyID>
+        <author>ISC</author>
+      </creationInfo>
+      <origin publicID="smi:isc.org/event/ISC006/origin">
+        <time>
+          <value>2020-07-08T09:00:00.000000Z</value>
+        </time>
+        <latitude>
+          <value>36.0</value>
+        </latitude>
+        <longitude>
+          <value>140.0</value>
+        </longitude>
+        <depth>
+          <value>20000.0</value>
+        </depth>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </origin>
+      <magnitude publicID="smi:isc.org/event/ISC006/magnitude">
+        <mag>
+          <value>2.1</value>
+        </mag>
+        <type>mw</type>
+        <originID>smi:isc.org/event/ISC006/origin</originID>
+        <creationInfo>
+          <agencyID>ISC</agencyID>
+          <author>ISC</author>
+        </creationInfo>
+      </magnitude>
+    </event>
+  </eventParameters>
+</q:quakeml>

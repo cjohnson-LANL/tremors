@@ -1,3 +1,3 @@
-from .agents.base import BaseAgent
-from .agents.tremors import TremorsAgent
-from .agents.temp import TremorsAgent as TremorsAgent2
+from .agents.tremors import TremorsAgent, approve_all
+
+__all__ = ["TremorsAgent", "approve_all"]
