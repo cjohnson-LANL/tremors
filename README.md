@@ -4,12 +4,13 @@
 
 # TREMORS
 
-TREMORS (Text Referenced Event Mapping and Output Renderer for Seismographs) [![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2609.01777-blue)](https://doi.org/10.48550/arXiv.2609.01777) 
-is an agentic framework that leverages large language model reasoning within a constrained LangGraph execution graph to automate seismic data retrieval.
+TREMORS (Text Referenced Event Mapping and Output Renderer for Seismographs) is an agentic framework that leverages large language model reasoning within a constrained LangGraph execution graph to automate seismic data retrieval.
 
 Natural language queries are translated into a structured intermediate schema, which drives a reproducible, auditable workflow for waveform (event-based/continuous) and metadata acquisition.
 
 Approved for unlimited release LA-UR-26-23557
+
+[![DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2609.01777-blue)](https://doi.org/10.48550/arXiv.2609.01777)
 
 ---
 
